@@ -1,0 +1,7 @@
+/certs/*
+/logs/**/*.log
+
+/backup/*
+.env
+
+/wordpress/wp-content/*
