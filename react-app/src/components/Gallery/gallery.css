@@ -1,0 +1,14 @@
+#gallery {
+  padding: 1rem 0 3rem;
+  background-color: #1a1c20;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#gallery .header {
+  color: #f25c27;
+  font-size: 70px;
+
+  font-weight: 700;
+  margin: 0 auto 2rem;
+}

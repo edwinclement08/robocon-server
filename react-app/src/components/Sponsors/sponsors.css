@@ -1,0 +1,43 @@
+/* #sponsors {
+  padding: 1rem;
+} */
+
+.image-size {
+  width: 370px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+.sponsor-components {
+  background-image: url('../../assets/img/bg-content2.jpg');
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.spon-img-container {
+  background-color: #eee;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.spon-img-container p {
+  color: #f25c27;
+  font-size: 3rem;
+}
+
+.sponsor-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pie-chart {
+  height: 50vh;
+}
+
+@media screen and (max-width: 850px) {
+  .image-size {
+    width: 320px;
+  }
+}

@@ -1,0 +1,33 @@
+#contactPage {
+  padding: 3rem 0;
+  background-color: #1a1c20;
+}
+
+#contactPage .form {
+  padding: 1rem 2rem;
+
+  border-radius: 15px;
+  background-color: #eee;
+  margin: 0 5%;
+}
+
+#contactPage .form h1 {
+  color: #1a1c20;
+}
+
+.img-fluid-animated {
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  /* width: 620px;
+  height: 440px; */
+  width: 80%;
+  /* height: 50%; */
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

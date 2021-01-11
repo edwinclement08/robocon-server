@@ -1,0 +1,76 @@
+#footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/img/footimg.jpg'), no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  padding: 5rem 0;
+}
+
+#footer h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.touch {
+  color: #ffb300;
+}
+
+.nav-icons {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.85) !important;
+
+  margin: 0 0.5rem;
+}
+
+.icon:hover {
+  color: #fff !important;
+}
+
+#contact {
+  border: 1px solid #fff;
+  padding: 0 1rem;
+  margin: 0 2rem;
+  border-radius: 10px;
+  box-shadow: 8px 8px 14px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.td-text {
+  /* vertical-align: top; */
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#myTable {
+  border-spacing: 15px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid;
+}
+
+#contact a:hover {
+  color: #ffb300;
+}
+
+@media screen and (max-width: 850px) {
+  #contact {
+    margin: 1rem 0.9rem 0;
+  }
+
+  #footer {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* .ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: white;
+  font-size: 50px;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  color: white;
+} */
+#home {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ss-img {
+  width: 80%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.ss2-img {
+  width: 50%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+/* List buttons */
+
+/* .ant-carousel .slick-dots li button {
+} */
+
+#home .ant-carousel .slick-dots-bottom {
+  bottom: -40px;
+}
+
+/* List buttons */
+
+.ss-container {
+  background-color: #1a1c20;
+  padding: 2rem;
+}
+
+.home2 {
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #f25c27;
+  font-size: 50px;
+
+  font-weight: 400;
+}
+
+.intro p {
+  color: #adadad;
+  padding: 1rem 3rem 0 0;
+  font-size: 14px;
+}
+
+/*-------------------------ABU ROBOCON------------------------*/
+
+.abu-robocon {
+  text-align: center;
+  padding: 3% 10%;
+  background-color: #e8e8e8;
+}
+
+.abu-robocon h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.abu-robocon h4 {
+  font-size: 1rem;
+}
+
+/*-------------------------ABU ROBOCON------------------------*/
+
+/*-------------------------PROBLEM STATEMENT------------------------*/
+
+.ps-container {
+  padding: 3rem 0 1.5rem;
+  text-align: center;
+  background: url('../../assets/img/bg-content2.jpg');
+}
+
+hr {
+  border-style: none;
+  border-top-style: dashed;
+  width: 80%;
+  border-width: 2px;
+  border-color: #fff;
+  margin: 1rem auto 2rem;
+}
+
+.ps {
+  padding: 1rem 0;
+}
+
+.ps-p2 {
+  padding: 0 4rem;
+}
+
+.ps-p2 h1 {
+  color: #f25c27;
+  font-weight: 700;
+}
+
+.ps-p2 h4 {
+  color: #eeeeee;
+}
+
+/*-------------------------PROBLEM STATEMENT------------------------*/
+
+@media screen and (max-width: 850px) {
+  .intro {
+    padding: 1rem 0 0;
+  }
+
+  .intro p {
+    padding: 0;
+  }
+
+  .ss-img,
+  .ss2-img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .ss-container {
+    background-color: #1a1c20;
+    padding: 2rem 12px;
+  }
+
+  .ps-p2 {
+    padding: 0 2rem;
+  }
+}

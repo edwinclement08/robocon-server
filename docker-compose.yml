@@ -24,6 +24,7 @@ services:
     volumes:
         - ./nginx:/etc/nginx/conf.d
         - ./logs/nginx:/var/log/nginx
+        - ./react-app/build/:/var/www/roboconcrce.org
         - ./wordpress:/var/www/html
         - ./certs:/etc/certs:ro
 
