@@ -5,6 +5,7 @@ import p16 from '../../assets/img/achievement/robocon16.jpg'
 import p17 from '../../assets/img/achievement/robocon17.jpg'
 import p18 from '../../assets/img/achievement/robocon18.jpg'
 import p20 from '../../assets/img/achievement/robocon2020.png'
+import brainwreck from "../../assets/img/achievement/Brainwreck.jpeg";
 import {Row , Col} from 'antd';
 
 
@@ -21,6 +22,30 @@ function Achievements() {
       <Row>
         
         <Col lg={16} xs={24}>
+        <div className="ac-list-item">
+          <Row>
+            <Col lg={8} xs={24}>
+              <div className="ac-list-img-container">
+                <img src={brainwreck} className="ac-list-img" />
+              </div>
+            </Col>
+            <Col lg={16} xs={24}>
+              <div className="ac-list-content">
+                <h1>BRAINWRECK </h1>
+                <p>
+                  Theme: Problem solving related to covid-19 using Robotics
+                </p>
+                <ul>
+                  <li>
+                    Bagged first place as the national winners .
+                  </li>
+                  <li>Awarded as the Best Circuit Design.</li>
+                  <li>Successfully provided solution to all Problem Statements along with CAD model and circuit design.</li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </div>
           <div className='ac-list-content'>
           <h1>ROBOCON 2020</h1>
           <p>

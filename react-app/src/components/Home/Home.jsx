@@ -6,6 +6,7 @@ import junior_t2_2020 from '../../assets/img/slide/Junior_Team2.jpg';
 import std3 from '../../assets/img/slide/Stadium3.jpg';
 import std4 from '../../assets/img/slide/Stadium4.PNG';
 import t1 from '../../assets/img/slide/Team1.jpg';
+import recruitment from "../../assets/img/announcements/recruitment.jpeg"
 
 import t2 from '../../assets/img/slide/Team2.jpg';
 import ProblemStatement from './ProblemStatement';
@@ -20,6 +21,9 @@ function Home() {
     
       <div className="ss-container">
         <Carousel autoplay>
+          <div>
+            <img src={recruitment} alt="ss" className="ss2-img" />
+          </div>
           <div>
             <img src={senior_t2020} alt="ss" className="ss2-img" />
           </div>
@@ -44,6 +48,10 @@ function Home() {
 
         </Carousel>
         <div className='intro'>
+        <p style={{color: " #f25c27", fontSize: "20px"}} > Virtual Robot building workshop comprehensively for all the CRCE students.</p>
+        <marquee scrollamount="10" style={{color: "#adadad"}}><b> It is 24hrs live workshop under the guidance of industry experts. Details for the workshop will be relayed through our discord. Make sure you stay updated by joining our discord community.</b></marquee>
+        
+        <a href="https://discord.gg/Jda7N9yk">Click to join our discord</a>
         <Row>
           <Col lg={6} xs={24}>
            <h1>Welcome!</h1>

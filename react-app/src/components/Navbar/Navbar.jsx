@@ -103,9 +103,6 @@ function Navbar() {
             CONTACT US
           </NavLink>
 
-          <NavLink to="/contact" className="nav-item" activeClassName="active">
-            BLOGS
-          </NavLink>
           <Link to={{ pathname: "https://blog.roboconcrce.org/" }} target="_blank" className="nav-item" activeClassName="active">
             
             BLOGS

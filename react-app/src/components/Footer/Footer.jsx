@@ -55,7 +55,8 @@ function Footer() {
                 <td>
                   <PhoneFilled className="icon" />
                 </td>
-                <td className="td-text">7045898193</td>
+                <td style={{width:"300px"}} className="td-text">Richa Tripathi <br/><i> (Captain)</i> <br/>+91 7045898193 </td>
+                <td className="td-text">Rachel Sequeira <br/><i> (Marketing Associate)</i> <br/>+91 9004711362 </td>
               </tr>
               <tr>
                 <td>
