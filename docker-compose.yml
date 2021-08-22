@@ -14,19 +14,41 @@ services:
     volumes:                                                                                           
       - ./wordpress:/var/www/html
 
-  nginx:
-    image: nginx:latest
-    container_name: nginx
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
+        #  nginx:
+        #    image: nginx:latest
+        #    container_name: nginx
+        #    restart: unless-stopped
+        #    ports:
+        #      - "80:80"
+        #      - "443:443"
+        #    volumes:
+        #        - ./nginx:/etc/nginx/conf.d
+        #        - ./logs/nginx:/var/log/nginx
+        #        - ./react-app/build/:/var/www/roboconcrce.org
+        #        - ./wordpress:/var/www/html
+        #        - ./certs:/etc/certs:ro
+
+  swag:
+    image: ghcr.io/linuxserver/swag:version-1.18.0
+    container_name: swag
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC 
+      - URL=roboconcrce.org
+      - SUBDOMAINS=www,blog,
+      - VALIDATION=http
+      - ONLY_SUBDOMAINS=false #optional
     volumes:
-        - ./nginx:/etc/nginx/conf.d
-        - ./logs/nginx:/var/log/nginx
-        - ./react-app/build/:/var/www/roboconcrce.org
-        - ./wordpress:/var/www/html
-        - ./certs:/etc/certs:ro
+      - ./swag-config:/config
+      - ./react-app/build/:/var/www/roboconcrce.org
+      - ./wordpress:/var/www/html
+    ports:
+      - 443:443
+      - 80:80 
+    restart: unless-stopped
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
