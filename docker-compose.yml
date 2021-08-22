@@ -1,9 +1,9 @@
 version: "3"
 services:
   wordpress:                                                                                               
-    image: wordpress:5.6.0-php7.3-fpm-alpine                                                              
-    container_name: wordpress                                                                              
-    restart: unless-stopped                                                                                
+    image: wordpress:5.6.0-php7.3-fpm-alpine
+    container_name: wordpress
+    restart: unless-stopped 
     environment:                                                                                          
       WORDPRESS_DB_HOST: db:3306                                                                           
       WORDPRESS_DB_USER: ${WORDPRESS_USER}                                                                 
@@ -13,20 +13,6 @@ services:
       - "db"                                                                                            
     volumes:                                                                                           
       - ./wordpress:/var/www/html
-
-        #  nginx:
-        #    image: nginx:latest
-        #    container_name: nginx
-        #    restart: unless-stopped
-        #    ports:
-        #      - "80:80"
-        #      - "443:443"
-        #    volumes:
-        #        - ./nginx:/etc/nginx/conf.d
-        #        - ./logs/nginx:/var/log/nginx
-        #        - ./react-app/build/:/var/www/roboconcrce.org
-        #        - ./wordpress:/var/www/html
-        #        - ./certs:/etc/certs:ro
 
   swag:
     image: ghcr.io/linuxserver/swag:version-1.18.0
@@ -49,17 +35,6 @@ services:
       - 443:443
       - 80:80 
     restart: unless-stopped
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    restart: unless-stopped
-    hostname: roboconcrce.org
-    ports:
-      - 3333:80
-    environment:
-      PMA_HOST: db
-      PMA_ABSOLUTE_URI: "https://phpmyadmin.roboconcrce.org/"
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
 
   db:
     image: mysql:5.7

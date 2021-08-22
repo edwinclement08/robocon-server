@@ -1,7 +1,8 @@
-/certs/*
-/logs/**/*.log
+*.log
+*.sqlite3
 
-/backup/*
+
 .env
+certs
+wordpress/wp-content/*
 
-/wordpress/wp-content/*

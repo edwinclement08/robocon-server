@@ -1,1 +1,0 @@
-2021/08/22 09:59:39 [crit] 489#489: connect() to [2600:140f:d000::1735:f0c9]:80 failed (99: Address not available) while requesting certificate status, responder: r3.o.lencr.org, peer: [2600:140f:d000::1735:f0c9]:80, certificate: "/config/keys/letsencrypt/fullchain.pem"
