@@ -4,5 +4,4 @@
 
 .env
 certs
-wordpress/wp-content/*
-
+wordpress/wp-content/uploads/*
