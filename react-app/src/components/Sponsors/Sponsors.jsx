@@ -4,6 +4,7 @@ import logo2 from '../../assets/img/sponsor/logo2.jpg'
 import logo3 from '../../assets/img/sponsor/logo3.jpg'
 import logo4 from '../../assets/img/sponsor/logo4.jpg'
 import logo5 from '../../assets/img/sponsor/logo5.png'
+import logo6 from '../../assets/img/sponsor/newSpons.jpg'
 import Chart from './Chart'
 import './sponsors.css'
 import {Row,Col,Button} from 'antd'
@@ -25,6 +26,14 @@ function Sponsors() {
       </Col>
     </Row>
       
+    </div>
+    <div className='spon-img-container' >
+      <p> Sponsors</p>
+      <div className='sponsor-images'>
+        
+        <img src={logo6} alt='logo6' className='image-size'/>
+        
+      </div>
     </div>
 
 
